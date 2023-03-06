@@ -1,0 +1,10 @@
+#goal
+int32 mode
+int32 catch_id
+ObjectWithTag[] objects
+---
+#result
+bool ok
+---
+#feedback
+int32 mode

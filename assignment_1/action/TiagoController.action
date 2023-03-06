@@ -1,0 +1,10 @@
+#goal
+move_base_msgs/MoveBaseGoal position
+bool obstacleDetection
+---
+#result
+geometry_msgs/Point[] obstacles
+---
+#feedback
+int32 mode
+geometry_msgs/Pose[] poses

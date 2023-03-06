@@ -1,0 +1,6 @@
+std_msgs/Header header
+float64 scanMinusMapThreshold
+float64 obstacleDetectionThreshold
+---
+std_msgs/Header header
+geometry_msgs/Point[] obsPoint
