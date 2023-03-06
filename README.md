@@ -2,10 +2,10 @@
 
 This project was developed by Javier Alquézar Alquézar, Alejandro Cano Caldero and Jesús Moncada Ramírez enrolling "Intelligent Robotics" at the University of Padova, in the academic year 2022-23.
 
-# 1. Introduction
+## 1. Introduction
 TODO
 
-# 2. Instructions to run
+## 2. Instructions to run
 
 First of all we have to launch the simulation and MoveIt. This command will also start ``roscore``:
 
@@ -39,8 +39,8 @@ We need to run the robot controller node:
 
 ``rosrun assignment_2 robot_controller_node``
 
-# 3. Documentation
+## 3. Documentation
 TODO
 
-# 4. Results
+## 4. Results
 TODO
