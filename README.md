@@ -1,12 +1,11 @@
 # README #
 
-This repository will be used for the delivery of the assignment of the Intelligent Robotics 2022-2023 course at UniPD.
+This project was developed by Javier Alquézar Alquézar, Alejandro Cano Caldero and Jesús Moncada Ramírez enrolling "Intelligent Robotics" at the University of Padova, in the academic year 2022-23.
 
-# Assignment 2 #
+# 1. Introduction
+TODO
 
-## 2.1 Instructions to run ##
-
-### 2.1.1 Code given for this assignment ###
+# 2. Instructions to run
 
 First of all we have to launch the simulation and MoveIt. This command will also start ``roscore``:
 
@@ -28,8 +27,6 @@ Now we have to run the TiagoController server node (developed by us in assignmen
 
 ``rosrun assignment_1 server_node``
 
-### 2.1.2 Code developed for this assignment ###
-
 We need to run the object detection service server:
 
 ``rosrun assignment_2 object_detections_node``
@@ -42,5 +39,8 @@ We need to run the robot controller node:
 
 ``rosrun assignment_2 robot_controller_node``
 
-## 2.2 Documentation about the project ##
-We have created a video demonstration running all the code developed, it can be found at [this link](https://drive.google.com/file/d/1PVyt0p77H4vKBW2WnDdaWP-PGjDtrGZz/view?usp=share_link). There is also a folder called ``assignment_2/docs`` where some documents explaining our code can be found.
+# 3. Documentation
+TODO
+
+# 4. Results
+TODO
