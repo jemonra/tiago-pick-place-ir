@@ -30,6 +30,8 @@ The code was modularized into three main ROS nodes:
 - `object_detections_node`: Detects AprilTags and returns the IDs and poses of all movable objects.
 - `object_manipulation_node`: Controls the robot arm to grasp or drop an object, updating the planning scene with collision objects.
 
+<img width="712" height="610" alt="image" src="https://github.com/user-attachments/assets/d2933006-ee64-49ba-869d-f64cd623da87" />
+
 ## 2. System Architecture
 
 ```
