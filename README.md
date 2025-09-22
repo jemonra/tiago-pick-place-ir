@@ -4,8 +4,7 @@ This project was developed by **Javier Alquézar Alquézar**, [**Alejandro Cano 
 
 ## 1. Introduction
 
-The primary goal of this project was to execute pick-and-place operations within a simulated TIAGo robot environment using ROS (Robot Operating System).  
-The project was divided into two assignments:
+The primary goal of this project was to execute pick-and-place operations within a simulated TIAGo robot environment using ROS (Robot Operating System). The project was divided into two assignments:
 
 ### Assignment 1 – Navigation and Obstacle Detection
 
@@ -30,7 +29,9 @@ The code was modularized into three main ROS nodes:
 - `object_detections_node`: Detects AprilTags and returns the IDs and poses of all movable objects.
 - `object_manipulation_node`: Controls the robot arm to grasp or drop an object, updating the planning scene with collision objects.
 
-<img width="712" height="610" alt="image" src="https://github.com/user-attachments/assets/d2933006-ee64-49ba-869d-f64cd623da87" />
+<p align="center">
+<img src="docs/tiago_simulation.png" alt="Description" width="356" height="305">
+</p>
 
 ## 2. System Architecture
 
@@ -48,22 +49,22 @@ The code was modularized into three main ROS nodes:
 
 ### Assignment 1 Details
 
-- Client Node (`client.cpp`)
+- Client Node (`client.cpp`).
   Prompts the user for a target pose and sends it to the `tiago_controller` action server.  
   Handles feedback and prints detected obstacles.
-- Server Node (`server.cpp`)
+- Server Node (`server.cpp`).
   Interfaces with the `move_base` action server to navigate to the goal pose.  
   Upon arrival, it calls the obstacle detection service and returns the obstacle positions.
-- Obstacle Detection (`obstacle_detection.cpp`)
+- Obstacle Detection (`obstacle_detection.cpp`).
   Compares LIDAR scan points to the map, discarding static points and clustering remaining points into movable obstacles.
 
 ### Assignment 2 Details
 
-- Robot Controller (`robot_controller.cpp`)
+- Robot Controller (`robot_controller.cpp`).
   Central node calling the human service to get the pick/drop order and coordinating navigation, detection, and manipulation.
-- Object Detections (`object_detections.cpp`)
+- Object Detections (`object_detections.cpp`).
   Subscribes to AprilTag detections, transforms poses to the robot frame, and returns a list of objects and poses.
-- Object Manipulation (`object_manipulation.cpp`)
+- Object Manipulation (`object_manipulation.cpp`).
   Uses MoveIt to plan and execute arm motions, attaching and detaching objects in Gazebo through the `gazebo_ros_link_attacher` service.
 
 ## 3. Instructions to Run
@@ -110,7 +111,7 @@ These results demonstrate a fully functional ROS-based pipeline combining naviga
 ## 5. Documentation
 
 For a detailed explanation of the implementation, refer to the two reports:
-- [Report for assignment 1](assignment_1/docs/Report.pdf)
-- [Report for assignment 2](assignment_2/docs/Report.pdf)
+- [Report for assignment 1](docs/ReportAssignment1.pdf)
+- [Report for assignment 2](docs/ReportAssignment2.pdf)
 
 They include code structure, algorithms, and design decisions for each assignment.
